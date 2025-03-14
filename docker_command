@@ -1,0 +1,6 @@
+docker buildx build --builder cloud-hemeai-hemeai-builder .  --platform linux/amd64,linux/arm64 -t rfantibody
+docker build -t rfantibody .
+docker image ls
+
+# Build and push a docker image
+docker buildx build --builder cloud-hemeai-hemeai-builder .  --platform linux/amd64,linux/arm64 -t hemeai/rfantibody --push
